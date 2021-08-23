@@ -3,14 +3,19 @@ import styled from 'styled-components'
 
 const Field = () => {
     return (
-        <form>
+        <StyledForm>
             <StyledLabel>Enter a playlist link</StyledLabel>
             <StyledField/>
-        </form>
+        </StyledForm>
     )
 }
 
 export default Field
+
+const StyledForm = styled.form`{
+    margin: 2vh auto;
+    width: 50%;
+}`
 
 const StyledLabel = styled.label`{
     display: block;
@@ -26,9 +31,10 @@ const StyledField = styled.input`{
     border-radius: 2px;
     border: 2px solid rgb(255, 255, 255);
     padding: 14px;
-    width: 50%;
+    width: 100%;
+    color: rgb(255, 255, 255);
     &:focus {
         outline: none;
-        border: 3px solid rgb(255, 255, 255)
+        border: 3px solid rgb(255, 255, 255);
     }
 }`
