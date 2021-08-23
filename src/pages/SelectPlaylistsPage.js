@@ -1,8 +1,12 @@
-import {Title} from '../components/global';
+import { Title } from '../components/global'
+import Button from '../components/button'
 
 const SelectPlaylistsPage = () => {
-  return(
-    <Title>Comparify</Title>
+  return (
+    <div>
+      <Title>Comparify</Title>
+      <Button text="FIND SAME SONGS"/>
+    </div>
   );
 }
 
