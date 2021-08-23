@@ -16,12 +16,12 @@ const StyledButton = styled.div`{
     width: 30%;
     margin: auto;
     border-radius: 500px;
-    color: rgb(255, 255, 255);
+    color: ${props => props.theme.colors.white};
     padding: 17px 48px;
-    font-size: 14px;
+    font-size: ${props => props.theme.fontSize.regular};
     text-align: center;
-    border: 2px solid rgb(255, 255, 255);
-    font-weight: 700;
+    border: ${props => props.theme.border};
+    font-weight: ${props => props.theme.fontWeight.bold};
 
     &:hover {
         transform: scale(1.04);

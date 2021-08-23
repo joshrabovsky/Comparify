@@ -16,7 +16,7 @@ const StyledButtonContainer = styled.div`{
 }`
 
 const StyledPlusButton = styled.div`{
-    border: 2px solid rgb(255, 255, 255);
+    border: ${props => props.theme.border};
     height: 2.5em;
     width: 2.5em;
     border-radius: 50%;
@@ -31,7 +31,7 @@ const StyledPlusButton = styled.div`{
     &:before {
         content: "";
         display: block;
-        background-color: rgb(255, 255, 255);
+        background-color: ${props => props.theme.colors.white};;
         position: absolute;
         top: 50%;
         left: 50%;

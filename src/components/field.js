@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const Field = () => {
     return (
         <StyledForm>
-            <StyledLabel>Enter a playlist link</StyledLabel>
+            <StyledLabel>Enter playlist link</StyledLabel>
             <StyledField/>
         </StyledForm>
     )
@@ -19,7 +19,7 @@ const StyledForm = styled.form`{
 
 const StyledLabel = styled.label`{
     display: block;
-    font-weight: 700;
+    font-weight: ${props => props.theme.fontWeight.bold};
     margin-bottom: 0.5vh;
     &:focus {
         outline: none;
@@ -29,10 +29,10 @@ const StyledLabel = styled.label`{
 const StyledField = styled.input`{
     background-color: transparent;
     border-radius: 2px;
-    border: 2px solid rgb(255, 255, 255);
+    border: ${props => props.theme.border};
     padding: 14px;
     width: 100%;
-    color: rgb(255, 255, 255);
+    color: ${props => props.theme.colors.white};
     &:focus {
         outline: none;
         border: 3px solid rgb(255, 255, 255);

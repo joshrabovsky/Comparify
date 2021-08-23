@@ -7,7 +7,14 @@ import ShowSongsPage from './pages/ShowSongsPage';
 
 const theme = {
   colors: {
-    main: "white"
+    white: "white"
+  },
+  border: "2px solid white",
+  fontWeight: {
+    bold: "700"
+  },
+  fontSize: {
+    regular: "14px"
   }
 }
 
